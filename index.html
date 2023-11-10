@@ -1,101 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
-</head>
-<body>
-    <section>
-        <nav></nav>
-    </section>
-    <section id="section1">
-        <div id="section-container">
-            <div class="top__container">
-                <div class="top-content-div">
-                    <div class="top__img">
-                        <div class="top__txt">
-                            <h2>Unveiling the Wonders of the Universe</h2>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="styles.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <header class="header">
+            <a href="" class="logo"><img src="/ressources/tel/Odyssey-logo-1.png" alt=""></a>
+            <input type="checkbox" id="check">
+            <label for="check" class="icons">
+                <img src="/ressources/tel/app.svg" id="menu-icon" alt="">
+                <i class='bx bx-x' id="close-icon"></i>
+            </label>
+            <nav class="navbar">
+                <a href="" style="--i:0" class="nav__item1">Stay Connected</a>
+                <a href="" style="--i:1" class="nav__item2">Education</a>
+                <a href="" style="--i:2" class="nav__item3">Community</a>
+                <a href="" style="--i:3" class="nav__item4">About Us</a>
+                <a href="" style="--i:4" class="nav__item5 Sign-in">Sign in </a>
+            </nav>
+        </header>
+        <section id="section1">
+            <div id="section-container">
+                <div class="top__container">
+                    <div class="top-content-div">
+                        <div class="top__img">
+                            <div class="top__txt">
+                                <h2>Unveiling the Wonders of the Universe</h2>
+                            </div>
                         </div>
                     </div>
-                    
+                    <div class="astro">
+                        <div class="astro-div">
+                            <div class="astro__graph-container">
+                                <div class="astro__soldier">
+                                    <img src="ressources/tel/astronaut.png" alt="" />
+                                    <div class="round-shadow"></div>
+                                </div>
+                                <div class="graph-div">
+                                    <div class="Exercising-graph">
+                                        <div class="Exercising-container">
+                                            <div class="titre-graph">
+                                                <div class="icone-titre-Exercising">
+                                                    <div class="icone-shadow">
+                                                        <img src="ressources/icons/graph/graph-icone.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <h2>Exercising</h2>
+                                            </div>
+                                            <div class="img-graph">
+                                                <img src="ressources/icons/graph/sinus.svg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="Spacewalks-graph">
+                                        <div class="spacewalks-container">
+                                            <div class="titre-graph">
+                                                <div class="icone-titre-spacewalks">
+                                                    <div class="icone-shadow">
+                                                        <img src="ressources/icons/graph/combo-icone.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <h2>Spacewalks</h2>
+                                            </div>
+                                            <div class="img-graph">
+                                                <img src="ressources/icons/graph/OBJECTS-graph.svg" alt="" />
+                                                <img src="ressources/icons/graph/graph-cam.png" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                  
+                                    <div class="truc-test">
+                                    <div class="Total-time">
+                                        <div class="Total-time-container">
+                                            <div class="total-time-titre-graph">
+                                                <div class="icone-titre-Total-time">
+                                                    <div class="icone-shadow">
+                                                        <img src="ressources/icons/graph/horloge-icone.svg" alt="" />
+                                                    </div>
+                                                    <h2>Total time in space</h2>
+                                                </div>
+                                            </div>
+                                            <div class="timer-counter">
+                                                <div id="countup"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="asto">
-                <div class="astro-div">
-                <div class="astro__graph-container">
-                    <div class="astro__soldier">
-                        <img src="ressources/tel/astronaut.png" alt="">
-                    </div>
-                    <div class="graph-div">
-                        <div class="Spacewalks-graph">
-                            <div class="spacewalks-container">
-                                <div class="titre-graph">
-                                    <div class="icone-titre-spacewalks">
-                                        <div class="icone-shadow">
-                                        <img src="ressources/icons/graph/combo-icone.svg" alt="">
-                                        </div>
-                                        
-                                    </div>
-                                    <h2>Spacewalks</h2>
-                                </div>
-                                <div class="img-graph">
-                                    <img src="ressources/icons/graph/OBJECTS-graph.svg" alt="">
-                                    <img src="ressources/icons/graph/graph-cam.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="Exercising-graph">
-                            <div class="Exercising-container">
-                                <div class="titre-graph">
-                                    <div class="icone-titre-Exercising">
-                                        <div class="icone-shadow">
-                                        <img src="ressources/icons/graph/graph-icone.svg" alt="">
-                                        </div>
-                                        
-                                    </div>
-                                    <h2>Exercising</h2>
-                                </div>
-                                <div class="img-graph">
-                                    <img src="ressources/icons/graph/sinus.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="Total-time">
-                            <div class="Total-time-container">
-                                <div class="total-time-titre-graph">
-                                    <div class="icone-titre-Total-time">
-                                        <div class="icone-shadow">
-                                            <img src="ressources/icons/graph/horloge-icone.svg" alt="">
-                                        </div>
-                                        <h2>Total time in space </h2>
-                                    </div>
-                                </div>
-                                <div class="timer-counter">
-                                    <div id="countup"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
             </div>
 
             <div class="info__container">
-                <div class="txt"></div>
+                <div>
+                <div class="txt">
+                    <p>At odissey, our mission is to inspire, educate, and ignite your passion for the cosmos. We are your premier destination for all things related to space exploration, astronomy, and the mysteries of the universe. Whether you're a seasoned astronomer or a curious novice, join us on a journey to the furthest reaches of the cosmos. </p>
+                </div>
                 <div class="btn__div">
                     <div class="btn__container">
-                        
+                        <button>Get Started</button>
                     </div>
                 </div>
             </div>
+            </div>
         </section>
-    </section>
 
-    <script src="script/countdown.js"></script>
-</body>
+        <script src="script/countdown.js"></script>
+    </body>
 </html>
