@@ -9,7 +9,9 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   /* background-color: red; */
 }
-
+a {
+  text-decoration: none;
+}
 /* NAV  */
 .bx-x {
   color: #020305;
@@ -183,6 +185,18 @@ body {
   background: #a9c2cb;
   padding: 8px;
   max-width: 32px;
+  max-height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn__container .icone-shadow {
+  padding: 10px;
+  min-width: 40px;
+  max-height: 40px;
+  border-radius: 12px;
+  background: #a9c2cb;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -290,6 +304,27 @@ body {
   background: #0d0f12;
   padding: 20px 40px;
   justify-content: center;
+  border: none;
+}
+
+.btn__container a {
+  color: #020305;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  gap: 12px;
+}
+
+.btn__container {
+  display: block;
+  gap: 24px;
+}
+
+.btn__container a {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
 }
 
 /* BREAKPOINT NAV */
@@ -422,6 +457,7 @@ body {
 @media only screen and (min-width: 634px) {
   .astro__soldier img {
     width: auto;
+    max-width: inherit;
   }
 
   .Total-time {
@@ -451,16 +487,19 @@ body {
 
   .icone-titre-spacewalks img,
   .icone-titre-Exercising img,
-  .icone-titre-Total-time img {
+  .icone-titre-Total-time img,
+  .btn__container .icone-shadow img {
     height: 20px;
   }
 
   .icone-titre-spacewalks .icone-shadow,
   .icone-titre-Exercising .icone-shadow,
-  .icone-titre-Total-time .icone-shadow {
+  .icone-titre-Total-time .icone-shadow,
+  .btn__container .icone-shadow {
     background: #a9c2cb;
     padding: 10px;
     min-width: 40px;
+    max-height: 40px;
   }
 
   .titre-graph,
@@ -497,5 +536,152 @@ body {
   .Exercising-graph {
     top: 188px;
     right: 30px;
+  }
+  .btn__container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .btn__container a {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 958px) {
+  .astro-div {
+    position: relative;
+    max-width: 505px;
+    left: 0;
+    transform: translate(0, 0);
+  }
+
+  .astro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .graph-div .Spacewalks-graph,
+  .graph-div .Exercising-graph {
+    max-width: inherit;
+  }
+
+  .top__container {
+    margin: 0 37px;
+  }
+
+  .astro {
+    margin-top: -345px;
+  }
+
+  .top__img {
+    background-image: url("ressources/tablette/earth-img.png");
+  }
+
+  .astro-div {
+    margin-right: 70px;
+  }
+
+  .Exercising-graph {
+    right: -60px;
+  }
+  .Spacewalks-graph {
+    left: -55px;
+  }
+
+  .top__txt h2 {
+    padding: 40px 0px 0px 40px;
+  }
+
+  .info__container {
+    padding: 24px 0px 32px 40px;
+  }
+
+  .info__container {
+    max-width: 45%;
+    margin-top: -250px;
+  }
+
+  .top__img {
+    border-radius: 40px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .graph-img {
+    width: 190px;
+  }
+  .camembert {
+    width: 95px;
+  }
+  .sinus-img {
+    width: 190px;
+  }
+
+  .top__img {
+    background-image: url(ressources/pc/earth-img.png);
+    height: 533px;
+  }
+
+  .top__txt h2 {
+    font-size: 64px;
+  }
+  .top__txt {
+    width: 460px;
+  }
+
+  .astro {
+    margin-top: -520px;
+  }
+
+  .astro-div {
+    margin-right: 70px;
+  }
+
+  .Exercising-graph {
+    top: 320px;
+    right: -130px;
+  }
+
+  .Spacewalks-graph {
+    top: 405px;
+    left: -238px;
+  }
+
+  .astro-div {
+    margin-right: 150px;
+  }
+
+  .round-shadow {
+    border-radius: 435px;
+    width: 174px;
+    height: 435px;
+    top: 300px;
+    right: 150px;
+    filter: blur(50px);
+  }
+
+  .Total-time {
+    margin-top: 730px;
+  }
+
+  .info__container {
+    margin-top: -332px;
+  }
+
+  .info__container {
+    max-width: 40%;
+}
+}
+
+@media only screen and (min-width: 1640px) {
+  .astro-div {
+    margin-right: 220px;
+  }
+  .info__container {
+    max-width: 45%;
 }
 }
