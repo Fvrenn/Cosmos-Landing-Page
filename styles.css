@@ -273,7 +273,7 @@ a {
   text-align: right;
 }
 .info__container {
-  padding: 32px 24px 24px 24px;
+  padding: 32px 24px 0px 24px;
 }
 .astro__soldier img {
   width: 280px;
@@ -325,6 +325,13 @@ a {
   display: flex;
   align-items: center;
   margin-top: 32px;
+}
+
+/* !SECTION2  */
+.brand-bandeau {
+  margin-top: 70px;
+  columns: 2;
+  text-align: center;
 }
 
 /* BREAKPOINT NAV */
@@ -548,6 +555,12 @@ a {
     align-items: center;
     margin: 0;
   }
+
+  .brand-bandeau {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
 
 @media only screen and (min-width: 958px) {
@@ -597,7 +610,7 @@ a {
   }
 
   .info__container {
-    padding: 24px 0px 32px 40px;
+    padding: 24px 0px 0px 40px;
   }
 
   .info__container {
@@ -607,6 +620,10 @@ a {
 
   .top__img {
     border-radius: 40px;
+  }
+
+  .brand-bandeau {
+    margin-top: 80px;
   }
 }
 
@@ -674,7 +691,11 @@ a {
 
   .info__container {
     max-width: 40%;
-}
+  }
+
+  .brand-bandeau {
+    margin-top: 119px;
+  }
 }
 
 @media only screen and (min-width: 1640px) {
@@ -683,5 +704,5 @@ a {
   }
   .info__container {
     max-width: 45%;
-}
+  }
 }
