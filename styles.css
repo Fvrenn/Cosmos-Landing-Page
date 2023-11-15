@@ -333,6 +333,18 @@ a {
   columns: 2;
   text-align: center;
 }
+/* ! SECTION  */
+
+.icone-txt-big .icone-shadow {
+  background: #a9c2cb;
+  padding: 14px;
+  max-width: 52px;
+  max-height: 52px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* BREAKPOINT NAV */
 
