@@ -342,7 +342,7 @@ a {
   padding: 24px;
 }
 
-#section2{
+#section2 {
   margin-bottom: 46px;
 }
 /* ! SECTION  */
@@ -398,6 +398,79 @@ a {
   line-height: normal;
 }
 
+/* !SECTION4  */
+
+.section4-bg-txt {
+  background-image: url("ressources/tel/mars-img.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 381px;
+  background-size: cover;
+  background-position: center;
+}
+
+.section4-bg-txt p {
+  color: #fff;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  padding: 10px 10px 0px 10px;
+}
+
+.section4-card1 h1 {
+  color: #a9c2cb;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 12px;
+}
+
+.section4-card1 h2 {
+  color: #020305;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+
+.section4-card1 p {
+  color: #171e27;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 171.429% */
+}
+
+.section4-card1 {
+  border-radius: 24px;
+  background-color: #fff;
+  box-shadow: 0px 20px 39px -12px rgba(99, 117, 124, 0.2);
+  padding: 24px;
+}
+
+.section4-card-div {
+  margin-top: -80px;
+}
+
+.section4_card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.section4-card1,
+.section4-card2,
+.section4-card3 {
+  max-width: 327px;
+}
+
+#section4{
+  margin-top: 45px;
+}
 /* BREAKPOINT NAV */
 
 @media (max-width: 1397px) {
@@ -515,6 +588,15 @@ a {
   .brand-bandeau img {
     height: 24px;
   }
+
+  .section4-bg-txt p {
+    color: #fff;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    padding: 24px 24px 0px 24px;
+  }
 }
 
 @media only screen and (min-width: 375px) {
@@ -528,6 +610,10 @@ a {
 
   .Spacewalks-graph {
     top: 209px;
+  }
+
+  .section4-bg-txt p {
+    font-size: 32px;
   }
 }
 
@@ -642,8 +728,42 @@ a {
     max-width: 600px;
   }
 
-  #section2{
+  #section2 {
     margin-bottom: 56px;
+  }
+  .section4-bg-txt {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .section4_card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .section4-card1,
+  .section4-card2,
+  .section4-card3 {
+    max-width: 267px;
+  }
+
+  .section4-bg-txt p {
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    padding: 40px 0px 0px 0px;
+    max-width: 764px;
+  }
+
+  .section4-bg-txt {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -727,6 +847,26 @@ a {
   .left-side_txt h2 {
     font-size: 40px;
   }
+
+  .section4-bg-txt {
+    border-radius: 40px;
+  }
+  .section4-bg-txt {
+    background-image: url(ressources/tablette/mars-img.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 381px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #section4 {
+    margin: 50px 40px 0px 40px;
+  }
+
+  .section4_card-container {
+    gap: 3.5%;
+  }
 }
 
 @media only screen and (min-width: 1366px) {
@@ -806,6 +946,51 @@ a {
   .section3-container {
     gap: 240px;
   }
+
+  .section4-card1,
+  .section4-card2,
+  .section4-card3 {
+    max-width: 400px;
+  }
+
+  .section4-card1 h1 {
+    color: #a9c2cb;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 90px; /* 140.625% */
+  }
+  .section4-card1 h2 {
+    color: #020305;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+
+  .section4-card1 p {
+    color: #171e27;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 33px; /* 183.333% */
+  }
+
+  .section4-card1 {
+    padding: 40px;
+    height: 434px;
+  }
+
+  .section4-bg-txt {
+    background-image: url(ressources/pc/mars-img.png);
+    height: 533px;
+  }
+
+  .section4-bg-txt p {
+    font-size: 64px;
+    max-width: 1220px;
+    padding: 80px 0px 0px 0px;
+  }
 }
 
 @media only screen and (min-width: 1640px) {
@@ -877,7 +1062,55 @@ a {
     margin-bottom: 10px;
   }
 
-  #section2{
+  #section2 {
     margin-bottom: 116px;
+  }
+
+  .top__container {
+    margin: 0 120px;
+  }
+
+  .info__container {
+    padding: 24px 0px 0px 0px;
+    margin-left: 120px;
+    display: block;
+  }
+
+  .info__container .txt {
+    max-width: 600px;
+  }
+
+  .btn__container button {
+    font-size: 24px;
+  }
+
+  .btn__container a {
+    font-size: 24px;
+  }
+
+  .icone-titre-spacewalks .icone-shadow,
+  .icone-titre-Exercising .icone-shadow,
+  .icone-titre-Total-time .icone-shadow,
+  .btn__container .icone-shadow {
+    max-width: 40px;
+    max-height: 40px;
+  }
+
+  .section4-card1 {
+    padding: 52px;
+  }
+
+  #section4 {
+    margin: 70px 120px 0px 120px;
+
+  }
+  .section4_card-container {
+    gap: 52px;
+  }
+
+  .section4-card1,
+  .section4-card2,
+  .section4-card3 {
+    max-width: 452px;
   }
 }
