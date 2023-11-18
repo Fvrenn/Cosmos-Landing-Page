@@ -12,6 +12,10 @@ body {
 a {
   text-decoration: none;
 }
+
+li {
+  list-style: none;
+}
 /* NAV  */
 .bx-x {
   color: #020305;
@@ -468,8 +472,155 @@ a {
   max-width: 327px;
 }
 
-#section4{
+#section4 {
   margin-top: 45px;
+}
+
+/* ! SECTION5  */
+.section5-img {
+  background-image: url("ressources/tel/other-planet.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 381px;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-5-titre h1 {
+  color: #fff;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.section-5-para p {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 171.429% */
+}
+
+.form-email form #email {
+  display: flex;
+  width: 100%;
+  padding: 22px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  background: #fff;
+  border: none;
+  outline: none;
+}
+
+.form-email form ::placeholder {
+  color: rgba(23, 30, 39, 0.5);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.form-email form #submit-btn {
+  border: none;
+  outline: none;
+  display: flex;
+  width: 100%;
+  padding: 20px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  background: #a9c2cb;
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.form-email form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.section-5-titre {
+  margin: 0px 24px 16px 24px;
+}
+.section-5-para {
+  margin: 0 24px 24px 24px;
+  max-width: 735px;
+}
+.section-5-form-div {
+  width: 100%;
+}
+
+.form-email {
+  margin: 0 24px;
+}
+
+.section5-img {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+#section5 {
+  margin-top: 70px;
+}
+
+/* !FOOTER  */
+footer{
+  z-index: 200px;
+}
+.footer-haut .center-footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer-haut .center-footer {
+  margin-top: 32px;
+}
+
+.footer-haut .center-footer a {
+  color: #020305;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.footer-haut .right-footer ul {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+  margin: 32px 0px 24px 0px;
+}
+
+.footer-haut .right-footer a {
+  color: #171e27;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.footer-bas a {
+  color: #5c5050;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.footer-container {
+  padding: 32px 24px;
 }
 /* BREAKPOINT NAV */
 
@@ -582,6 +733,8 @@ a {
   #countup {
     letter-spacing: 8px;
   }
+
+
 }
 
 @media only screen and (min-width: 329px) {
@@ -597,6 +750,14 @@ a {
     line-height: normal;
     padding: 24px 24px 0px 24px;
   }
+  .footer-haut .right-footer ul {
+    display: flex;
+    align-items: start;
+    flex-direction: row;
+    gap: 10px;
+    margin: 32px 0px 24px 0px;
+  }
+
 }
 
 @media only screen and (min-width: 375px) {
@@ -614,6 +775,10 @@ a {
 
   .section4-bg-txt p {
     font-size: 32px;
+  }
+
+  .footer-haut .right-footer ul {
+    gap: 32px;
   }
 }
 
@@ -733,6 +898,26 @@ a {
   }
   .section4-bg-txt {
     text-align: center;
+  }
+
+  .form-email form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .form-email form #submit-btn {
+    max-width: 179px;
+  box-shadow: 0px 19px 45px -10px rgba(13, 15, 18, 0.5);
+  }
+
+  .form-email form #email {
+    max-width: 416px;
+  }
+
+  .section-5-para {
+    margin: 0 24px 33px 24px;
   }
 }
 
@@ -867,6 +1052,20 @@ a {
   .section4_card-container {
     gap: 3.5%;
   }
+
+  .section5-img {
+    background-image: url(ressources/tablette/other-planet.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 381px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+  }
+
+  #section5 {
+    margin: 80px 40px 0px 40px;
+  }
 }
 
 @media only screen and (min-width: 1366px) {
@@ -991,6 +1190,71 @@ a {
     max-width: 1220px;
     padding: 80px 0px 0px 0px;
   }
+
+  .section-5-titre h1 {
+    color: #fff;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+
+  .section-5-para p {
+    color: #fff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34.5px; /* 191.667% */
+  }
+
+  .form-email form #email {
+    display: flex;
+    max-width: 649px;
+    padding: 26px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 24px;
+    background: #fff;
+    border: none;
+    outline: none;
+    min-height: 82px;
+  }
+
+  .form-email form #submit-btn {
+    min-width: 226px;
+    padding: 26px 54px;
+    gap: 10px;
+    border-radius: 28px;
+    font-size: 24px;
+    min-height: 82px;
+  }
+
+  .form-email form ::placeholder {
+    color: rgba(23, 30, 39, 0.5);
+    font-size: 24px;
+  }
+
+  .section-5-titre {
+    margin: 0px 24px 12px 120px;
+  }
+
+  .section-5-para {
+    margin: 0 24px 48px 120px;
+  }
+
+  .form-email {
+    margin: 0 120px;
+  }
+
+  .section5-img {
+    background-image: url(ressources/pc/other-planet.png);
+    height: 533px;
+  }
+
+  #section5 {
+    margin: 120px 120px 0px 120px;
+  }
 }
 
 @media only screen and (min-width: 1640px) {
@@ -1102,7 +1366,6 @@ a {
 
   #section4 {
     margin: 70px 120px 0px 120px;
-
   }
   .section4_card-container {
     gap: 52px;
